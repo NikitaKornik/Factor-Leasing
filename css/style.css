@@ -27,7 +27,7 @@ body {
   overflow: hidden;
   max-height: 55px;
   max-width: 1640px;
-  width: calc(100%);
+  width: 100%;
   display: grid;
   margin-bottom: 50px;
   transition: max-height 0.3s ease-in-out;
@@ -353,7 +353,8 @@ body {
 .leasing-company {
   margin-top: 430px;
   max-width: 1640px;
-  width: calc(100% - 20px);
+  width: 100%;
+  padding: 0px 10px;
 }
 
 .leasing-company__title {
@@ -610,6 +611,7 @@ body {
 @media (min-width: 1024px) {
   .leasing-products__grid {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
   }
 
   .leasing-products__title {
@@ -621,8 +623,9 @@ body {
 
 .leasing-banner {
   max-width: 1640px;
+  width: 100%;
   width: calc(100% - 20px);
-  margin: 50px auto 30px;
+  margin: 50px 30px;
   padding: 20px;
 
   height: 340px;
