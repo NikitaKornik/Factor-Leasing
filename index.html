@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/assets/icons/fovicon.png" type="image/png">
+    <title>Factor Leasing</title>
+  </head>
+  <body>
+    <input type="checkbox" id="toggle" hidden />
+    <header class="site-header">
+      <div class="site-header__top-row">
+        <div class="site-header__menu">
+          <label for="toggle" class="site-header__toggle-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+        </div>
+
+        <div class="site-header__contact">
+          <div class="site-header__phone">+ 375 29 3382595</div>
+          <img class="site-header__operator-img" src="./images/operator_a1.png" />
+        </div>
+        <div class="site-header__contact">
+          <div class="site-header__phone">+ 375 33 3982595</div>
+          <img class="site-header__operator-img" src="./images/operator_mtc.png" />
+        </div>
+        <div class="site-header__contact">
+          <div class="site-header__phone">+ 375 17 3882595</div>
+          <img class="site-header__operator-img" src="./images/operator_f.png" />
+        </div>
+      </div>
+
+      <a href="/" class="site-header__logo-link">
+        <img class="site-header__logo-img" src="./images/logo.png"/>
+      </a>
+
+      <nav class="site-header__nav">
+        <ul class="site-header__nav-list">
+          <li class="site-header__nav-item"><a class="site-header__nav-link" href="/about.html">О нас</a></li>
+          <li class="site-header__nav-item"><a class="site-header__nav-link" href="/partners.html">Партнёрам</a></li>
+          <li class="site-header__nav-item"><a class="site-header__nav-link" href="/infoDisclosure.html">Раскрытие информации</a></li>
+          <li class="site-header__nav-item"><a class="site-header__nav-link" href="/contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="site-header__btn">Личный кабинет</button>
+    </header>
+
+
+    <div class="slider">
+      <div class="slider__fade" id="fade"></div>
+      <h2 class="slider__title" id="title">
+        Работаем оперативно ценим ваше время!
+      </h2>
+      <div class="slider__desc" id="desc">
+        Большая линейка лизинговых программ, оперативное рассмотрение заявки до
+        10 минут, минимальный пакет документов по сделке
+      </div>
+      <div class="slider__progress" id="progress"></div>
+      <div class="slider__subtitle" id="subtitle">
+        Лизинг физическим лицам
+      </div>
+      <div class="slider__next">
+        <button id="skip">Следующий</button>
+        <div>
+          <svg
+            width="20"
+            height="12"
+            viewBox="0 0 20 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_1_478)">
+              <path
+                d="M19.3146 6.39327L12.7166 11.8784C12.4958 12.0618 12.1655 12.0348 11.9791 11.8176C11.7924 11.6005 11.8201 11.2756 12.0409 11.0923L17.5469 6.51508H0.523377C0.234388 6.51508 0 6.28455 0 6.00033C0 5.71611 0.234388 5.48558 0.523377 5.48558H17.5466L12.0406 0.908404C11.8198 0.724772 11.7921 0.400208 11.9788 0.183045C12.0824 0.0625448 12.23 0.000460625 12.3789 0.000460625C12.4982 0.000460625 12.6183 0.0402784 12.7166 0.122009L19.3146 5.60713C19.4323 5.70484 19.5003 5.84866 19.5003 6.00033C19.5003 6.152 19.4323 6.29556 19.3146 6.39353V6.39327Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_478">
+                <rect
+                  width="19.5"
+                  height="12"
+                  fill="white"
+                  transform="matrix(1 0 0 -1 0 12)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="leasing-company fade-up">
+      <div class="leasing-company__header">
+        <h3 class="leasing-company__title">
+          Лизинговая компания “ФакторЛизинг”
+        </h3>
+        <div class="leasing-company__subtitle">
+          С нашей помощью вы сможете купить в лизинг всё необходимое на
+          максимально выгодных условиях.
+        </div>
+      </div>
+      <div class="leasing-company__banner">
+        <div class="leasing-company__text">
+          Современный и эффективный способ приобретения имущества
+        </div>
+      </div>
+
+      <div class="leasing-company__description">
+        Современный, технологичный и эффективный способ приобретения имущества.
+        С нашей помощью вы сможете купить в лизинг всё необходимое на
+        максимально выгодных условиях.
+      </div>
+    </div>
+
+    <div class="line line-display-only"></div>
+
+    <div class="conveyor fade-up">
+      <div class="conveyor__inner">
+        <span class="conveyor__text"
+          >Лизинг - это легко! * ФакторЛизинг *
+        </span>
+        <span class="conveyor__text"
+          >Лизинг - это легко! * ФакторЛизинг *
+        </span>
+        <span class="conveyor__text"
+          >Лизинг - это легко! * ФакторЛизинг *
+        </span>
+      </div>
+    </div>
+
+    <div class="leasing-products fade-up">
+      <h3 class="leasing-products__title">Предметы лизинга</h3>
+      <div class="leasing-products__grid">
+        <div class="leasing-products__card">
+          <div class="leasing-products__image-wrapper">
+            <img
+              src="../images/leasingItem1.png"
+              class="leasing-products__image"
+            />
+          </div>
+          <div class="leasing-products__text">Компьютеры и телефоны</div>
+        </div>
+        <div class="leasing-products__card">
+          <div class="leasing-products__image-wrapper">
+            <img
+              src="../images/leasingItem2.png"
+              class="leasing-products__image"
+            />
+          </div>
+          <div class="leasing-products__text">
+            Бытовая техника, техника для дома
+          </div>
+        </div>
+        <div class="leasing-products__card">
+          <div class="leasing-products__image-wrapper">
+            <img
+              src="../images/leasingItem3.png"
+              class="leasing-products__image"
+            />
+          </div>
+          <div class="leasing-products__text">Садовая техника, инструменты</div>
+        </div>
+        <div class="leasing-products__card">
+          <div class="leasing-products__image-wrapper">
+            <img
+              src="../images/leasingItem4.png"
+              class="leasing-products__image"
+            />
+          </div>
+          <div class="leasing-products__text">Мебель для дома, кухни</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leasing-banner fade-up">
+      <div class="leasing-banner__title">Оперативно</div>
+      <div class="leasing-banner__subtitle">Оформите лизинг</div>
+      <div class="leasing-banner__highlight">
+        за <span class="leasing-banner__highlight--green">3</span> шага
+      </div>
+    </div>
+
+    <div class="steps fade-up">
+      <div class="steps__item">
+        <div class="steps__title">Заполните заявку:</div>
+        <div class="steps__text">
+          Укажите необходимые данные, и мы быстро рассчитаем стоимость.
+        </div>
+        <div class="steps__number">01</div>
+      </div>
+      <div class="steps__item">
+        <div class="steps__title">Утвердите условия</div>
+        <div class="steps__text">
+          Обсудите и согласуйте детали договора с нашим менеджером.
+        </div>
+        <div class="steps__number">02</div>
+      </div>
+      <div class="steps__item">
+        <div class="steps__title">Получите ваше оборудование</div>
+        <div class="steps__text">
+          Наслаждайтесь новым авто или техникой, готовыми к работе!
+        </div>
+        <div class="steps__number">03</div>
+      </div>
+    </div>
+
+    <div class="leasing-definition fade-up">
+      <h3 class="leasing-definition__title">Что такое Лизинг?</h3>
+      <div class="leasing-definition__text leasing-definition__text--intro">
+        Лизинг совмещает в себе покупку, аренду и кредитование и является
+        разновидностью финансовых инструментов, с помощью которых вы
+        приобретаете необходимое Вам имущество, не отвлекая единовременно
+        большого объема собственных денежных средств.
+      </div>
+      <div class="leasing-definition__text leasing-definition__text--details">
+        При осуществлении лизинговой сделки Лизингодатель обязуется приобрести в
+        собственность указанное Лизингополучателем имущество у определенного им
+        продавца и предоставить Лизингополучателю это имущество за плату во
+        временное владение и пользование на определенных условиях, обусловленных
+        договором лизинга. Лизингополучатель получает имущество в пользование,
+        использует имущество, платит за это определенную сумму, и в конечном
+        итоге при исполнении обязательств им по договору лизинга становится
+        собственником этого имущества.
+      </div>
+    </div>
+
+    <div class="our-partners fade-up">
+      <input
+        type="radio"
+        name="our-partner"
+        id="our-partner-1"
+        hidden
+        checked
+      />
+      <input type="radio" name="our-partner" id="our-partner-2" hidden />
+      <input type="radio" name="our-partner" id="our-partner-3" hidden />
+      <input type="radio" name="our-partner" id="our-partner-4" hidden />
+      <input type="radio" name="our-partner" id="our-partner-5" hidden />
+      <input type="radio" name="our-partner" id="our-partner-6" hidden />
+
+      <ul class="our-partners__list">
+        <li>
+          <label for="our-partner-1"
+            ><img src="./images/partners_1.png"
+          /></label>
+        </li>
+        <li>
+          <label for="our-partner-2"
+            ><img src="./images/partners_2.png"
+          /></label>
+        </li>
+        <li>
+          <label for="our-partner-3"
+            ><img src="./images/partners_3.png"
+          /></label>
+        </li>
+        <li>
+          <label for="our-partner-4"
+            ><img src="./images/partners_4.png"
+          /></label>
+        </li>
+        <li>
+          <label for="our-partner-5"
+            ><img src="./images/partners_5.png"
+          /></label>
+        </li>
+        <li>
+          <label for="our-partner-6"
+            ><img src="./images/partners_6.png"
+          /></label>
+        </li>
+      </ul>
+
+      <ul class="our-partners__info">
+        <li class="our-partners__info-item1">
+          <div class="our-partners__info-container">
+            <div class="our-partners__title">Название 1</div>
+            <div class="our-partners__subtitle">Описание 1</div>
+            <button class="our-partners__btn">Перейти на сайт</button>
+          </div>
+        </li>
+        <li class="our-partners__info-item2">
+          <div class="our-partners__info-container">
+            <div class="our-partners__title">
+              Салон-магазин дверей «Двери Даром»
+            </div>
+            <div class="our-partners__subtitle">
+              В интернет-магазине Двери Даром вы можете приобрести все виды
+              дверей ⭐ Бесплатный замер, гарантия на установку 10 лет! ⭐
+              Доставка, низкие цены, ручки в подарок!
+            </div>
+            <button class="our-partners__btn">Перейти на сайт</button>
+          </div>
+        </li>
+        <li class="our-partners__info-item3">
+          <div class="our-partners__info-container">
+            <div class="our-partners__title">Название 3</div>
+            <div class="our-partners__subtitle">Описание 3</div>
+            <button class="our-partners__btn">Перейти на сайт</button>
+          </div>
+        </li>
+        <li class="our-partners__info-item4">
+          <div class="our-partners__info-container">
+            <div class="our-partners__title">Название 4</div>
+            <div class="our-partners__subtitle">Описание 4</div>
+            <button class="our-partners__btn">Перейти на сайт</button>
+          </div>
+        </li>
+        <li class="our-partners__info-item5">
+          <div class="our-partners__info-container">
+            <div class="our-partners__title">Название 5</div>
+            <div class="our-partners__subtitle">Описание 5</div>
+            <button class="our-partners__btn">Перейти на сайт</button>
+          </div>
+        </li>
+        <li class="our-partners__info-item6">
+          <div class="our-partners__info-container">
+            <div class="our-partners__title">Название 6</div>
+            <div class="our-partners__subtitle">Описание 6</div>
+            <button class="our-partners__btn">Перейти на сайт</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="leasing-advantages">
+      <div class="leasing-advantages__item">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986"
+            stroke="#2DFF28"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M22 4L12 14.01L9 11.01"
+            stroke="#2DFF28"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div class="leasing-advantages__title">Удобные платежи</div>
+      </div>
+
+      <div class="leasing-advantages__item">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986"
+            stroke="#2DFF28"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M22 4L12 14.01L9 11.01"
+            stroke="#2DFF28"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div class="leasing-advantages__title">Быстрое оформление</div>
+      </div>
+
+      <div class="leasing-advantages__item">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986"
+            stroke="#2DFF28"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M22 4L12 14.01L9 11.01"
+            stroke="#2DFF28"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div class="leasing-advantages__title">Минимальный платеж</div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__info">
+        <div class="site-footer__column column1">
+          <img class="site-footer__logo" src="./images/logo.png" />
+          <div class="site-footer__company-name">ООО “ФакторЛизинг”</div>
+          <ul class="site-footer__contacts">
+            <li>
+              <div>
+                <svg
+                  width="12"
+                  height="16"
+                  viewBox="0 0 12 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.68223 0C4.17578 0.00171481 2.73148 0.635809 1.66622 1.76317C0.600958 2.89052 0.00172845 4.41907 0 6.01345C0 8.50141 3.25678 13.197 4.99047 15.5208C5.0729 15.6315 5.17795 15.7209 5.29773 15.7824C5.41751 15.8438 5.5489 15.8758 5.68202 15.8758C5.81515 15.8758 5.94653 15.8438 6.06631 15.7824C6.18609 15.7209 6.29115 15.6315 6.37358 15.5208C8.10727 13.1974 11.364 8.50141 11.364 6.01345C11.3623 4.41914 10.7631 2.89066 9.69797 1.76332C8.6328 0.635974 7.18861 0.00182912 5.68223 0ZM8.21256 6.23287C8.17302 6.74427 7.99604 7.23302 7.70252 7.64141C7.40901 8.0498 7.01121 8.36078 6.5561 8.53763C6.10099 8.71447 5.60757 8.74981 5.1341 8.63945C4.66063 8.5291 4.22688 8.27766 3.88406 7.91484C3.54124 7.55201 3.30368 7.09295 3.19941 6.59184C3.09514 6.09074 3.12852 5.56852 3.29561 5.08684C3.46271 4.60517 3.75654 4.18415 4.14241 3.87351C4.52827 3.56286 4.99007 3.37555 5.47327 3.3337C5.84022 3.30375 6.20894 3.3582 6.55412 3.49331C6.89931 3.62842 7.21278 3.84098 7.47302 4.11641C7.73325 4.39184 7.9341 4.7236 8.06175 5.08894C8.18941 5.45427 8.24085 5.84451 8.21256 6.23287Z"
+                    fill="#2DFF28"
+                  />
+                </svg>
+              </div>
+              <div>220140, г. Минск, ул. Домбровская, 9, оф.2.1.1.</div>
+            </li>
+            <li>
+              <div>
+                <svg
+                  width="11"
+                  height="13"
+                  viewBox="0 0 11 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.565 9.07339L8.73831 8.01919C8.51349 7.89026 8.25234 7.85129 8.0026 7.90941C7.75287 7.96753 7.53125 8.11884 7.37827 8.33569L6.64269 9.38948C5.76881 8.81271 4.98953 8.08912 4.33549 7.24714C3.64802 6.39829 3.10187 5.71517 2.78793 4.61974L4.00474 3.86467C4.22356 3.73175 4.38779 3.51739 4.46546 3.26333C4.54312 3.00927 4.52864 2.73372 4.42486 2.49034L3.56973 0.51817C3.51903 0.405678 3.44704 0.305408 3.35822 0.22358C3.26939 0.141751 3.16563 0.0801078 3.05337 0.0424734C2.9411 0.00483891 2.82273 -0.00798447 2.70559 0.00479847C2.58845 0.0175814 2.47504 0.0556981 2.3724 0.116785C1.49397 0.628117 0.215292 1.53154 0.0384614 2.54208C-0.0709566 3.75723 0.0536752 4.98325 0.404817 6.14596C0.755959 7.30867 1.32631 8.3839 2.08137 9.30662C3.62 11.2026 5.80725 12.3741 8.16198 12.5634C9.20043 12.5901 10.258 11.2456 10.8538 10.3353C10.9198 10.2345 10.9649 10.1201 10.9861 9.99953C11.0073 9.87896 11.0042 9.755 10.9769 9.6358C10.9497 9.51661 10.8989 9.40487 10.8279 9.30793C10.7569 9.211 10.6673 9.13107 10.565 9.07339Z"
+                    fill="#2DFF28"
+                  />
+                </svg>
+              </div>
+              <div class="site-footer__phones">
+                <div>+ 375 29 3382595</div>
+                <div>+ 375 33 3982595</div>
+                <div>+ 375 17 3882595</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="14 15 15 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_37_131)">
+                    <path
+                      d="M21.8155 22.4727L19.9138 20.6729L14.4763 25.7106C14.6806 25.9167 14.9519 26.0319 15.2342 26.0323H28.3958C28.6774 26.0322 28.9481 25.9169 29.1513 25.7106L23.719 20.6729L21.8155 22.4727Z"
+                      fill="#2DFF28"
+                    />
+                    <path
+                      d="M29.1561 14.3218C28.952 14.1148 28.68 13.9994 28.3973 14H15.2361C14.9533 13.9999 14.6815 14.1162 14.4783 14.3243L21.8169 21.1173L29.1561 14.3218Z"
+                      fill="#2DFF28"
+                    />
+                    <path
+                      d="M14 15.0625V24.9184L19.3048 20.0453L14 15.0625Z"
+                      fill="#2DFF28"
+                    />
+                    <path
+                      d="M24.3208 20.046L29.6256 24.9195V15.0576L24.3208 20.046Z"
+                      fill="#2DFF28"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_37_131"
+                      x="0"
+                      y="0"
+                      width="43.6257"
+                      height="40.0322"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="7" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_37_131"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_37_131"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div>info@factorleasing.by</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column column2">
+          <div class="site-footer__title">Разделы</div>
+          <ul class="site-footer__list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about.html">О нас</a></li>
+            <li><a href="/partners.html">Партнёрам</a></li>
+            <li><a href="/infoDisclosure.html">Клиентам</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column column3">
+          <div class="site-footer__title">Информация</div>
+          <ul class="site-footer__list">
+            <li><a href="#">Cookie файлы</a></li>
+            <li><a href="#">Условия использования</a></li>
+            <li><a href="#">Конфиденциальность</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__column column4">
+          <div class="site-footer__title site-footer__social-title">Наши социальные сети</div>
+          <div class="site-footer__social-icons">
+            <a href="#"
+              ><svg
+                width="12"
+                height="20"
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.10611 3.45104L11.0358 3.49974V0.0973894L8.17664 0C5.48928 0 3.31097 2.11063 3.31097 4.71449V7.7278H0V11.3731H3.31097V19.2962H7.47468V11.3731H10.4344L11.0364 7.7278H7.47468V5.03179C7.47468 4.15842 8.20528 3.45052 9.10665 3.45052L9.10611 3.45104Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.7434 19.2962H5.18061C2.32394 19.2962 0 16.7943 0 13.7188V5.57738C0 2.50193 2.32394 0 5.18061 0H12.7434C15.6 0 17.924 2.50193 17.924 5.57738V13.7193C17.924 16.7948 15.6 19.2967 12.7434 19.2967V19.2962ZM5.18061 1.94113C3.31843 1.94113 1.80352 3.57207 1.80352 5.57687V13.7188C1.80352 15.7236 3.31843 17.3546 5.18061 17.3546H12.7434C14.6055 17.3546 16.1205 15.7236 16.1205 13.7188V5.57738C16.1205 3.57258 14.6055 1.94164 12.7434 1.94164H5.18061V1.94113Z"
+                  fill="white"
+                />
+                <path
+                  d="M8.96177 14.5319C6.46041 14.5319 4.42554 12.3412 4.42554 9.64829C4.42554 6.95536 6.46041 4.76465 8.96177 4.76465C11.4631 4.76465 13.498 6.95536 13.498 9.64829C13.498 12.3412 11.4631 14.5319 8.96177 14.5319ZM8.96177 6.38642C7.2912 6.38642 5.93241 7.84978 5.93241 9.64778C5.93241 11.4458 7.29167 12.9091 8.96177 12.9091C10.6319 12.9091 11.9911 11.4458 11.9911 9.64778C11.9911 7.84978 10.6319 6.38642 8.96177 6.38642Z"
+                  fill="white"
+                />
+                <path
+                  d="M13.587 5.65968C14.1709 5.65968 14.6444 5.14998 14.6444 4.52125C14.6444 3.89251 14.1709 3.38281 13.587 3.38281C13.003 3.38281 12.5295 3.89251 12.5295 4.52125C12.5295 5.14998 13.003 5.65968 13.587 5.65968Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.0466733 0L7.44025 10.6449L0 19.2997H1.67451L8.1884 11.7223L13.4515 19.2997H19.1498L11.3403 8.05609L18.2656 0H16.5911L10.5921 6.97865L5.74506 0H0.0466733ZM2.50911 1.32816H5.12695L16.687 17.9713H14.0691L2.50911 1.32816Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 9H2V21H6V9Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__line"></div>
+      <div class="site-footer__copyright">© Все права защищены. “ФакторЛизинг”</div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/fade-up.js"></script>
+  </body>
+</html>
