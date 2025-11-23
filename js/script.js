@@ -1,3 +1,6 @@
+const NEWDATA = new Date("2025-11-29T00:00:00");
+const now = new Date();
+
 const slides = [
   {
     title: "Работаем оперативно, ценим ваше время!",
@@ -104,11 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   elements.forEach((el) => observer.observe(el));
 });
 
-// Дата, после которой сайт должен заблокироваться
-const blockDate = new Date("2025-11-29T00:00:00");
-const now = new Date();
-
-if (now >= blockDate) {
+if (now >= NEWDATA) {
   document.body.innerHTML = `
       <div style="display:flex;justify-content:center;align-items:center;flex-direction:column; gap: 30px; height:100vh;font-size:24px;font-family:sans-serif;text-align:center;padding:20px; color: white; font-size: 52px; font-weight: 700;">
         Доступ к сайту ограничен.
