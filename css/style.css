@@ -171,6 +171,7 @@ body {
     background-color: #00000000;
     max-height: 550px;
     gap: 15px;
+    padding: 0px 10px;
     grid-template-areas:
       "site-header__top-row site-header__top-row site-header__top-row"
       "site-header__logo site-header__nav-list site-header__btn";
