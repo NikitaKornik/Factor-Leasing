@@ -611,7 +611,6 @@ body {
 @media (min-width: 1024px) {
   .leasing-products__grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0px;
   }
 
   .leasing-products__title {
