@@ -534,7 +534,8 @@ body {
 
 .conveyor__inner {
   display: flex;
-  animation: conveyorSeamless 15s linear infinite;
+  width: max-content;
+  animation: conveyorSeamless 5s linear infinite;
 }
 
 .conveyor__text {
@@ -549,7 +550,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50.5%);
+    transform: translateX(-50%);
   }
 }
 
@@ -780,7 +781,7 @@ body {
   position: relative;
 }
 
-.partners__btn{
+.partners__btn {
   display: none;
 }
 
@@ -974,7 +975,7 @@ body {
     width: 100%;
   }
 
-  .partners__btn{
+  .partners__btn {
     cursor: pointer;
     display: block;
     position: absolute;
@@ -983,18 +984,18 @@ body {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    opacity: .5;
-    transition: opacity .5s ease;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
     font-size: 16px;
   }
-  .partners__btn:hover{
-    opacity: .7;
+  .partners__btn:hover {
+    opacity: 0.7;
   }
-  .partners__btn-right{
+  .partners__btn-right {
     position: absolute;
     right: 15px;
   }
-  .partners__btn-left{
+  .partners__btn-left {
     position: absolute;
     left: 15px;
   }
