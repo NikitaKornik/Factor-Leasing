@@ -445,6 +445,8 @@ body {
   font-weight: 400;
   max-width: 794px;
   margin: auto;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .leasing-company__info {
@@ -476,6 +478,9 @@ body {
   .leasing-company__stats {
     grid-template-columns: repeat(4, 155px);
     justify-content: space-between;
+  }
+  .leasing-company__description {
+    margin: 70px auto 30px;
   }
 }
 
