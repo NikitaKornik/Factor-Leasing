@@ -535,7 +535,7 @@ body {
 .conveyor__inner {
   display: flex;
   width: max-content;
-  animation: conveyorSeamless 5s linear infinite;
+  animation: conveyorSeamless 15s linear infinite;
 }
 
 .conveyor__text {
