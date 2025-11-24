@@ -1,4 +1,4 @@
-// --- АНИМАЦИЯ fade-ap ---
+// --------------------------------- FADE-UP ANIMATE ---------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".fade-up");

@@ -1,6 +1,8 @@
 const NEWDATA = new Date("2025-11-29T00:00:00");
 const now = new Date();
 
+// --------------------------------- SLIDES ANIMATE ---------------------------------
+
 const slides = [
   {
     title: "Работаем оперативно, ценим ваше время!",
@@ -105,6 +107,24 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   elements.forEach((el) => observer.observe(el));
+});
+
+// --------------------------------- PARTNERS SCROLL ---------------------------------
+
+const list = document.querySelector(".our-partners__list");
+
+document.querySelector(".partners__btn-left").addEventListener("click", () => {
+  list.scrollBy({
+    left: -400, // листаем влево
+    behavior: "smooth",
+  });
+});
+
+document.querySelector(".partners__btn-right").addEventListener("click", () => {
+  list.scrollBy({
+    left: 400, // листаем вправо
+    behavior: "smooth",
+  });
 });
 
 if (now >= NEWDATA) {

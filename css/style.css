@@ -777,6 +777,11 @@ body {
 .our-partners {
   max-width: 1920px;
   width: calc(100% - 20px);
+  position: relative;
+}
+
+.partners__btn{
+  display: none;
 }
 
 .our-partners__list {
@@ -968,6 +973,32 @@ body {
   .our-partners {
     width: 100%;
   }
+
+  .partners__btn{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 55px;
+    border: 0;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    opacity: .5;
+    transition: opacity .5s ease;
+    font-size: 16px;
+  }
+  .partners__btn:hover{
+    opacity: .7;
+  }
+  .partners__btn-right{
+    position: absolute;
+    right: 15px;
+  }
+  .partners__btn-left{
+    position: absolute;
+    left: 15px;
+  }
+
   .our-partners__list {
     grid-template-columns: repeat(6, minmax(320px, 1fr));
   }
