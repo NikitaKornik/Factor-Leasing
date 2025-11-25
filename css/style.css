@@ -932,6 +932,10 @@ body {
   line-height: 26px;
 }
 
+.our-partners__description::-webkit-scrollbar {
+  display: none;
+}
+
 .our-partners__btn {
   background-color: var(--primary-color);
   color: black;
