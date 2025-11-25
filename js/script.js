@@ -1,36 +1,18 @@
 // --------------------------------- SCROLL TOP BTN ---------------------------------
 
-const btn = document.querySelector('.scroll-top-btn');
+const btn = document.querySelector(".scroll-top-btn");
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    btn.classList.add('show');
+    btn.classList.add("show");
   } else {
-    btn.classList.remove('show');
+    btn.classList.remove("show");
   }
 });
 
-btn.addEventListener('click', () => {
+btn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
-  });
-});
-
-// --------------------------------- PARTNERS SCROLL ---------------------------------
-
-const list = document.querySelector(".our-partners__list");
-
-document.querySelector(".partners__btn-left").addEventListener("click", () => {
-  list.scrollBy({
-    left: -400, // листаем влево
-    behavior: "smooth",
-  });
-});
-
-document.querySelector(".partners__btn-right").addEventListener("click", () => {
-  list.scrollBy({
-    left: 400, // листаем вправо
     behavior: "smooth",
   });
 });

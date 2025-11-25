@@ -1,0 +1,7 @@
+.our-partners__info-item {
+  display: none;
+}
+
+.our-partners__info-item.active {
+  display: block;
+}
