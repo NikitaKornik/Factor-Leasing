@@ -240,6 +240,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 .scroll-top-btn.show {
   transform: scale(1);
