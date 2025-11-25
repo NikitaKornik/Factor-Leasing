@@ -956,6 +956,7 @@ body {
 
 .our-partners__info-item.active {
   opacity: 1;
+  z-index: 3;
 }
 
 @media (min-width: 1024px) {
