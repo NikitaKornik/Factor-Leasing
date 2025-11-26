@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const listEl = document.querySelector(".archive__list");
 
-  fetch("/data/archive.json")
+  fetch("data/archive.json")
     .then((res) => res.json())
     .then((archive) => {
       renderArchive(archive);
