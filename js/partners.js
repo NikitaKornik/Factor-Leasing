@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 1. Генерация списка
   function renderPartners(partners) {
-    // 1. Генерация списка
     partners.forEach((p, i) => {
       listEl.insertAdjacentHTML(
         "beforeend",
