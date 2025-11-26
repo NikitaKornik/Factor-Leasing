@@ -254,6 +254,7 @@ body {
 /* ---------------- IMAGE SLIDER TITLE ---------------- */
 
 .slider {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   max-width: 1920px;
@@ -332,8 +333,8 @@ body {
 
 @media (min-width: 1024px) {
   .slider {
-    height: 1080px;
-    padding: 400px 140px 0px 140px;
+    height: 810px;
+    padding: 300px 140px 0px 140px;
   }
 
   .slider__title {
