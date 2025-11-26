@@ -289,21 +289,47 @@
       <form class="feedback-form__container" action="" method="post">
         <div class="feedback-form__inputs-wrapper">
           <div class="feedback-form__inputs">
-            <input placeholder="Ваше имя" type="text" name="name" required />
-            <input placeholder="Ваш Email" type="email" name="email" required />
+            <label class="visually-hidden" for="name">Ваше имя</label>
             <input
+              id="name"
+              placeholder="Ваше имя"
+              type="text"
+              name="name"
+              autocomplete="name"
+              maxlength="50"
+              required
+            />
+            <label class="visually-hidden" for="email">Ваш Email</label>
+            <input
+              id="email"
+              placeholder="Ваш Email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+            <label class="visually-hidden" for="phone"
+              >Ваш номер телефона</label
+            >
+            <input
+              id="phone"
               placeholder="Ваш номер телефона"
-              type="number"
-              name="number"
+              type="tel"
+              name="phone"
+              autocomplete="tel"
+              maxlength="20"
               required
             />
           </div>
 
           <div>
+            <label class="visually-hidden" for="message">Текст сообщения</label>
             <textarea
+              id="message"
               class="feedback-form__textarea"
               placeholder="Текст сообщения"
               name="textarea"
+              maxlength="1000"
             ></textarea>
           </div>
         </div>
