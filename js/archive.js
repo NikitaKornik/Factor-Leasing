@@ -1,49 +1,20 @@
 // --------------------------------- PARTNERS SELECT ---------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
-  const archive = [
-    {
-      year: "2025",
-      documents: [
-        { title: "Пример 1", url: "#" },
-        { title: "Пример 2", url: "#" },
-        { title: "Пример 3", url: "#" },
-        { title: "Пример 5", url: "#" },
-        { title: "Пример 6", url: "#" },
-        { title: "Пример 7", url: "#" },
-        { title: "Пример 8", url: "#" },
-        { title: "Пример 9", url: "#" },
-        { title: "Пример 10", url: "#" },
-        { title: "Пример 11", url: "#" },
-      ],
-    },
-    {
-      year: "2024",
-      documents: [
-        { title: "Пример 1", url: "#" },
-        { title: "Пример 2", url: "#" },
-        { title: "Пример 3", url: "#" },
-        { title: "Пример 4", url: "#" },
-        { title: "Пример 5", url: "#" },
-      ],
-    },
-    {
-      year: "2023",
-      documents: [
-        { title: "Пример 1", url: "#" },
-        { title: "Пример 2", url: "#" },
-        { title: "Пример 3", url: "#" },
-      ],
-    },
-  ];
-
   const listEl = document.querySelector(".archive__list");
 
+  fetch("/data/archive.json")
+    .then((res) => res.json())
+    .then((archive) => {
+      renderArchive(archive);
+    });
+
   // 1. Генерация списка
-  archive.forEach((a, i) => {
-    listEl.insertAdjacentHTML(
-      "beforeend",
-      `
+  function renderArchive(archive) {
+    archive.forEach((a, i) => {
+      listEl.insertAdjacentHTML(
+        "beforeend",
+        `
         <li class="archive__list-item">
           <input type="checkbox" id="year-${a.year}" hidden />
           <label for="year-${a.year}">
@@ -123,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </ul>
       </li>
     `
-    );
-  });
+      );
+    });
+  }
 });
