@@ -263,7 +263,6 @@ body {
   overflow: hidden;
   transition: opacity 0.7s ease-in-out;
 
-  background-image: url(../images/Image.webp);
   background-position: center;
   background-size: cover;
   z-index: 0;
@@ -427,7 +426,7 @@ body {
   justify-content: start;
   align-items: start;
 
-  background-image: url(../images/AModernAndEffectiveWayToAcquireProperty.webp);
+  background-image: url(../images/banner_backgound-2.webp);
   background-position: center right;
   background-size: cover;
 }
@@ -695,7 +694,7 @@ body {
   align-items: start;
   flex-direction: column;
 
-  background-image: url(../images/leasingForThreeSteps.webp);
+  background-image: url(../images/banner_backgound-1.webp);
   background-position: center right;
   background-size: cover;
 }
@@ -1368,7 +1367,7 @@ body {
   overflow: hidden;
   z-index: 0;
 
-  background-image: url(../images/leasingForThreeSteps.webp);
+  background-image: url(../images/banner_backgound-1.webp);
   background-position: center top;
   background-size: cover;
 }
