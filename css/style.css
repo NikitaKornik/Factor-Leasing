@@ -1628,6 +1628,7 @@ body {
 }
 
 .feedback-form__subtitle {
+  margin-top: 10px;
   color: var(--text-secondary);
   font-size: 16px;
   font-weight: 400;
