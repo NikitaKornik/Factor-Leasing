@@ -1635,6 +1635,10 @@ body {
   text-align: center;
 }
 
+.feedback-form__subtitle--white{
+  color: var(--text-primary);
+}
+
 .feedback-form__container {
   margin-top: 20px;
   background-color: #252525;
