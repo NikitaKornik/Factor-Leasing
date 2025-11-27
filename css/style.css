@@ -2099,9 +2099,18 @@ body {
   line-height: 0;
 }
 
+.company-info__documents-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  flex-direction: column;
+}
+
 .company-info-documents {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  list-style-type: none;
   gap: 35px;
 }
 
