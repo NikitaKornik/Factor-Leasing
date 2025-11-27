@@ -19,7 +19,7 @@ btn.addEventListener("click", () => {
 
 //
 
-const NEWDATA = new Date("2025-11-29T00:00:00");
+const NEWDATA = new Date("2025-12-02T00:00:00");
 const now = new Date();
 
 if (now >= NEWDATA) {
