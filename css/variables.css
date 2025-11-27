@@ -77,3 +77,22 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
+
+.document--row {
+  display: flex;
+  gap: 15px;
+}
+
+.document--column{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.document__link {
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration: none;
+}
