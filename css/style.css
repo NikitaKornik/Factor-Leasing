@@ -104,12 +104,18 @@ body {
 .site-header__nav-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   gap: 35px;
   padding: 0 40px;
   list-style: none;
   height: 100%;
+  max-height: 230px;
+  overflow: scroll;
+}
+
+.site-header__nav-list::-webkit-scrollbar {
+  display: none;
 }
 
 .site-header__nav-item {
