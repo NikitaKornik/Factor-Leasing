@@ -384,10 +384,13 @@ body {
 /* ---------------- ABOUT FACTOR LEASING ---------------- */
 
 .leasing-company {
+  margin-bottom: 80px;
+
   margin-top: 430px;
   max-width: 1640px;
   width: 100%;
   padding: 0px 10px;
+  border-bottom: 0;
 }
 
 .leasing-company__title {
@@ -478,7 +481,7 @@ body {
   max-width: 794px;
   margin: auto;
   text-align: center;
-  margin-top: 40px;
+  margin: 50px auto 0;
 }
 
 .leasing-company__info {
@@ -492,6 +495,7 @@ body {
 @media (min-width: 1024px) {
   .leasing-company {
     margin-top: 800px;
+    border-bottom: 1px solid #ffffff2b;
   }
 
   .leasing-company__header {
@@ -512,16 +516,17 @@ body {
     justify-content: space-between;
   }
   .leasing-company__description {
-    margin: 70px auto 30px;
+    margin: 70px auto 70px;
   }
 }
 
 /* ---------------- CONVEYOR ---------------- */
 
 .conveyor {
+  margin-bottom: 80px;
+
   max-width: 1920px;
   width: 100%;
-  margin: 50px 0px;
   height: 62px;
   overflow: hidden;
   position: relative;
@@ -536,6 +541,7 @@ body {
 @media (min-width: 1024px) {
   .conveyor {
     display: block;
+    margin-bottom: 100px;
   }
 }
 
@@ -594,6 +600,8 @@ body {
 /* ---------------- LEASING ITEMS ---------------- */
 
 .leasing-products {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: 100%;
   box-sizing: border-box;
@@ -668,23 +676,30 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .leasing-products {
+    margin-bottom: 100px;
+  }
+
   .leasing-products__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .leasing-products__title {
-    margin: 40px 10px 80px 10px;
+    margin: 0px 10px 80px 10px;
   }
 }
 
 /* ---------------- lEASING FOR THREE STEPS ---------------- */
 
-.leasing-banner {
+.leasing-banner__wrapper {
+  margin-bottom: 80px;
+
   max-width: 1640px;
-  width: 100%;
   width: calc(100% - 20px);
-  margin: 50px 30px;
-  padding: 20px;
+}
+
+.leasing-banner {
+  width: 100%;
 
   height: 340px;
   border-radius: 16px;
@@ -724,34 +739,14 @@ body {
   font-weight: 700;
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
-  .leasing-banner {
-    padding: 0px 0px 0px 200px;
-    height: 482px;
-  }
-
-  .leasing-banner__subtitle {
-    font-size: 51px;
-  }
-
-  .leasing-banner__highlight {
-    font-size: 128px;
-  }
-
-  .leasing-banner__highlight--green {
-    font-size: 128px;
-  }
-}
-
 .steps {
+  margin-top: 30px;
   max-width: 1640px;
   width: calc(100% - 20px);
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin: 10px;
 }
 
 .steps__item {
@@ -782,6 +777,27 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .leasing-banner__wrapper {
+    margin-bottom: 100px;
+  }
+
+  .leasing-banner {
+    padding: 0px 0px 0px 200px;
+    height: 482px;
+  }
+
+  .leasing-banner__subtitle {
+    font-size: 51px;
+  }
+
+  .leasing-banner__highlight {
+    font-size: 128px;
+  }
+
+  .leasing-banner__highlight--green {
+    font-size: 128px;
+  }
+
   .steps {
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
@@ -791,9 +807,10 @@ body {
 /* ---------------- WHAT IS LEASING ---------------- */
 
 .leasing-definition {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
-  margin: 60px 0 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,13 +843,15 @@ body {
 
 @media (min-width: 1024px) {
   .leasing-definition {
-    margin: 80px 0 160px;
+    margin-bottom: 100px;
   }
 }
 
 /* ---------------- PARTNERS-LIST ---------------- */
 
 .our-partners {
+  margin-bottom: 80px;
+
   max-width: 1920px;
   width: calc(100% - 20px);
   position: relative;
@@ -968,6 +987,8 @@ body {
 
 @media (min-width: 1024px) {
   .our-partners {
+    margin-bottom: 100px;
+
     width: 100%;
   }
 
@@ -1020,11 +1041,12 @@ body {
 /* ---------------- LEASING BENEFITS ---------------- */
 
 .leasing-advantages {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
   display: grid;
   gap: 15px;
-  margin: 70px 0;
 }
 
 .leasing-advantages__item {
@@ -1045,9 +1067,10 @@ body {
 
 @media (min-width: 1024px) {
   .leasing-advantages {
+    margin-bottom: 100px;
+
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
-    margin: 150px 0;
   }
 }
 
@@ -1056,7 +1079,7 @@ body {
 .site-footer {
   max-width: 1640px;
   width: calc(100% - 20px);
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .site-footer__info {
@@ -1194,10 +1217,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .site-footer {
-    margin-top: 150px;
-  }
-
   .site-footer__info {
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-areas: "column1 column3 column4";
@@ -1231,7 +1250,6 @@ body {
 
 .breadcrumbs__url {
   color: var(--text-primary);
-  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -1243,6 +1261,8 @@ body {
 /* ---------------- ABOUT US ---------------- */
 
 .about {
+  margin-bottom: 80px;
+
   width: 1040px;
   max-width: calc(100% - 20px);
   display: flex;
@@ -1267,9 +1287,17 @@ body {
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  .about {
+    margin-bottom: 100px;
+  }
+}
+
 /* ---------------- ADDITION ---------------- */
 
 .addition {
+  margin-bottom: 80px;
+
   color: var(--text-secondary);
   font-size: 16px;
   font-weight: 400;
@@ -1279,14 +1307,21 @@ body {
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  .addition {
+    margin-bottom: 100px;
+  }
+}
+
 /* ---------------- ADVANTAGES ---------------- */
 
 .advantages {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
   background-color: #252525;
   padding: 55px 20px;
-  margin: 40px 0px 70px 0px;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -1332,12 +1367,13 @@ body {
 
 @media (min-width: 1024px) {
   .advantages {
+    margin-bottom: 100px;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
     height: 523px;
     padding: 20px 120px;
-    margin: 100px 0px 100px 0px;
   }
 
   .advantages__blocks {
@@ -1362,11 +1398,12 @@ body {
 /* ---------------- REQUIREMENTS FOR PARTNER? ---------------- */
 
 .partner-requirements {
+  margin-bottom: 80px;
+
   position: relative;
   max-width: 1640px;
   width: calc(100% - 20px);
   padding: 55px 20px;
-  margin: 40px 0 70px 0;
   display: flex;
   flex-direction: column-reverse;
   border-radius: 16px;
@@ -1431,12 +1468,13 @@ body {
 
 @media (min-width: 1024px) {
   .partner-requirements {
+    margin-bottom: 100px;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
     height: 523px;
     padding: 20px 120px;
-    margin: 100px 0;
     background-position: center left;
     background-size: cover;
   }
@@ -1474,11 +1512,12 @@ body {
 /* ---------------- BENEFITS ---------------- */
 
 .benefits {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
   background-color: #252525;
   padding: 30px 20px;
-  margin: 40px 0 70px 0;
   display: flex;
   flex-direction: column;
 }
@@ -1515,11 +1554,12 @@ body {
 
 @media (min-width: 1024px) {
   .benefits {
+    margin-bottom: 100px;
+
     flex-direction: row;
     align-items: start;
     height: 523px;
     padding: 120px;
-    margin: 100px 0;
     flex-direction: column;
     gap: 30px;
   }
@@ -1537,6 +1577,8 @@ body {
 /* ---------------- CONTACTS ---------------- */
 
 .contacts-section {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
   display: flex;
@@ -1604,6 +1646,8 @@ body {
 
 @media (min-width: 1024px) {
   .contacts-section {
+    margin-bottom: 100px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1620,9 +1664,10 @@ body {
 /* ---------------- FORM QUESTIONS ---------------- */
 
 .feedback-form {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
-  margin-top: 80px;
 }
 
 .feedback-form__title {
@@ -1720,7 +1765,7 @@ body {
 
 @media (min-width: 1024px) {
   .feedback-form {
-    margin-top: 120px;
+    margin-bottom: 100px;
   }
 
   .feedback-form__container {
@@ -1745,9 +1790,10 @@ body {
 /* ---------------- INFO BLOCK ---------------- */
 
 .info {
+  margin-bottom: 80px;
+
   max-width: 1085px;
   width: calc(100% - 20px);
-  margin: 60px 0px 30px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1799,7 +1845,7 @@ body {
 
 @media (min-width: 1024px) {
   .info {
-    margin: 150px 0px 150px 0px;
+    margin-bottom: 100px;
   }
 
   .info__title {
@@ -1817,7 +1863,6 @@ body {
 
 .registration-info {
   max-width: 1640px;
-  margin-top: 50px;
   width: calc(100% - 20px);
   padding: 30px 20px;
   background-color: #252525;
@@ -1862,6 +1907,8 @@ body {
 
 @media (min-width: 1024px) {
   .registration-info {
+    margin-bottom: 50px;
+
     padding: 100px;
     gap: 150px;
     grid-template-columns: repeat(2, 1fr);
@@ -1875,6 +1922,8 @@ body {
 /* ---------------- DOCUMENTS INFORMATION ---------------- */
 
 .company-docs {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
   padding: 50px 20px;
@@ -1907,6 +1956,8 @@ body {
 
 @media (min-width: 1024px) {
   .company-docs {
+    margin-bottom: 50px;
+
     padding: 100px;
     gap: 150px;
     grid-template-columns: repeat(2, 1fr);
@@ -1920,13 +1971,14 @@ body {
 /* ---------------- CLIENT DOCS ---------------- */
 
 .client-docs {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
   padding: 50px 20px;
   background-color: #252525;
   display: grid;
   gap: 50px;
-  margin-top: 60px;
 }
 
 .client-docs__title {
@@ -1945,7 +1997,8 @@ body {
 
 @media (min-width: 1024px) {
   .client-docs {
-    margin-top: 120px;
+    margin-bottom: 100px;
+
     padding: 100px;
     gap: 150px;
     grid-template-columns: repeat(2, 1fr);
@@ -1962,6 +2015,8 @@ body {
 /* ---------------- REGISTRY INFORMATION ---------------- */
 
 .registry-info {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
   background-color: #252525;
@@ -2005,10 +2060,11 @@ body {
 
 @media (min-width: 1366px) {
   .registry-info {
+    margin-bottom: 100px;
+
     align-items: start;
     height: 512px;
     padding: 20px 550px 20px 120px;
-    margin: 50px 0px 0px 0px;
   }
 
   .registry-info__blocks {
@@ -2042,8 +2098,9 @@ body {
 /* ---------------- COMPANY INFO SECTION ---------------- */
 
 .company-info {
+  margin-bottom: 80px;
+
   max-width: 1640px;
-  margin-top: 30px;
   width: calc(100% - 20px);
   padding: 50px 20px;
   background-color: #252525;
@@ -2132,7 +2189,8 @@ body {
 
 @media (min-width: 1024px) {
   .company-info {
-    margin-top: 50px;
+    margin-bottom: 100px;
+
     padding: 100px;
   }
 
@@ -2144,9 +2202,10 @@ body {
 /* ---------------- ARCHIVE ---------------- */
 
 .archive {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
-  margin-top: 60px;
   display: grid;
   gap: 50px;
 }
@@ -2269,7 +2328,8 @@ input[type="checkbox"]:checked + label .archive__list__svg {
 
 @media (min-width: 1024px) {
   .archive {
-    margin-top: 120px;
+    margin-bottom: 100px;
+
     grid-template-columns: repeat(2, 1fr);
     gap: 180px;
   }
@@ -2286,6 +2346,8 @@ input[type="checkbox"]:checked + label .archive__list__svg {
 /* ---------------- ARCHIVE ---------------- */
 
 .sample-applications {
+  margin-bottom: 80px;
+
   max-width: 1640px;
   width: calc(100% - 20px);
   background-color: #252525;
@@ -2320,6 +2382,8 @@ input[type="checkbox"]:checked + label .archive__list__svg {
 
 @media (min-width: 1224px) {
   .sample-applications {
+    margin-bottom: 50px;
+
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     padding: 20px 20px 20px 120px;
