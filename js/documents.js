@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const listEl = document.querySelector(".company-info__documents-wrapper");
 
-  fetch("/data/documents.json")
+  fetch("../data/documents.json")
     .then((res) => res.json())
     .then((documents) => {
       renderDocuments(documents);
