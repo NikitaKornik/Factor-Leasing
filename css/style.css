@@ -710,6 +710,7 @@ body {
   height: 340px;
   border-radius: 16px;
   overflow: hidden;
+  padding: 20px;
 
   display: flex;
   justify-content: center;
@@ -1091,6 +1092,8 @@ body {
 .site-footer__info {
   display: grid;
   justify-content: space-between;
+  border-bottom: 1px solid #ffffff2b;
+  padding-bottom: 20px;
   grid-template-areas:
     "column3 column3"
     "column1 column1"
@@ -1163,7 +1166,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  padding: 5px 0 40px 0;
+  padding: 40px 0 40px 0;
 }
 
 .site-footer__column.column1 {
@@ -1867,9 +1870,12 @@ body {
 
 /* ---------------- STATE REGISTRATION INFORMATION ---------------- */
 
-.registration-info {
+.registration__wrapper{
   max-width: 1640px;
   width: calc(100% - 20px);
+}
+
+.registration-info {
   padding: 30px 20px;
   background-color: #252525;
   display: grid;
@@ -2023,8 +2029,6 @@ body {
 .registry-info {
   margin-bottom: 80px;
 
-  max-width: 1640px;
-  width: calc(100% - 20px);
   background-color: #252525;
   padding: 55px 20px;
   display: flex;

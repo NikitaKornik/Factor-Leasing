@@ -47,18 +47,6 @@ a {
   text-align: center;
 }
 
-.line {
-  max-width: 1640px;
-  width: calc(100% - 20px);
-  height: 1px;
-  padding: 0 10px;
-  margin-bottom: 40px;
-  background-color: #ffffff2b;
-}
-.line-display-only {
-  height: 0px;
-}
-
 @media (min-width: 1024px) {
   .line {
     margin-bottom: 40px;
