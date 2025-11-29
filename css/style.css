@@ -752,7 +752,7 @@ body {
   width: calc(100% - 20px);
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 16px;
 }
 
