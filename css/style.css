@@ -1601,6 +1601,11 @@ body {
   gap: 30px;
 }
 
+.contacts-section a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
 .contacts-section__map img {
   width: 100%;
 }
