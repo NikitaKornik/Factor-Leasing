@@ -1089,6 +1089,11 @@ body {
   width: calc(100% - 20px);
 }
 
+.site-footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
 .site-footer__info {
   display: grid;
   justify-content: space-between;
