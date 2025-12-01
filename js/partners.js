@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const infoEl = document.querySelector(".our-partners__info");
 
   // fetch("/data/partners.json")
-  fetch(`${basePath}/data/partners.json`)
+  fetch(`https://nikitakornik.github.io/Factor-Leasing/data/partners.json`)
     .then((res) => res.json())
     .then((partners) => {
       renderPartners(partners);
